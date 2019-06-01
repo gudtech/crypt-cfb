@@ -1,6 +1,5 @@
 package Crypt::CFB;
 use vars qw($VERSION) ;
-use UNIVERSAL qw(can);
 require Exporter;
 
 @ISA = qw(Exporter);

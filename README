@@ -10,3 +10,10 @@ Crypt::CFB - Encrypt Data in Cipher Feedback Mode
 
 Pure Perl implementation of Cipher Feedback Mode for almost
 arbitrary block ciphers and cryptographic hash functions.
+
+To build, run tests, and install:
+
+        perl Makefile.PL
+        make
+        make test
+        make install

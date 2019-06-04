@@ -1,0 +1,18 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: perl:5.28.1
+    steps:
+      - checkout
+      - run:
+          name: "Build"
+          command: |
+            perl Makefile.PL
+            make
+      - run:
+          name: "Run Test Suite"
+          command: |
+            make test
+
